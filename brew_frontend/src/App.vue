@@ -1,14 +1,20 @@
 <template>
     <div>
-        <h1 v-show='loggedIn'>Hi</h1>
+        <Home v-show='loggedIn' />
     </div>
 </template>
 
 <script>
+import Home from '@/views/Home'
+
 export default {
-    data() {
-        return{ 
-            loggedIn: false,
+    components: {
+        Home,
+    },
+
+    computed: {
+        loggedIn(){
+           return this.$store.state.loggedIn 
         }
     },
 }
