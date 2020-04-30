@@ -1,7 +1,7 @@
 {
+    "pluginsFile": "tests/e2e/plugins/index.js",
     "baseUrl": "http://localhost:8080",
     "chromeWebSecurity": false,
-    "testFiles": "**/*.{feature,features}",
-    "pluginsFile": "tests/e2e/plugins/index.js",
-    "integrationFolder": "tests/e2e/specs"
+    "testFiles": "**/*.{feature,features}"
 }
+
