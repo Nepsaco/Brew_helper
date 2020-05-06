@@ -8,3 +8,11 @@ Given('I am on the home page', () => {
 Then('I should see app name', (name) => {
     the('main-heading').contains('Brew Helper')
 })
+
+And('I should see my recipes', () => {
+
+})        
+
+And('I should see footer', () => {
+
+})
