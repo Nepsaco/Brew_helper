@@ -22,7 +22,7 @@
             "name": "I am on the home page",
             "result": {
               "status": "passed",
-              "duration": 227000000
+              "duration": 247000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I should see app name",
             "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 25000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I should see my recipes",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 19000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I should see footer",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 22000000
             }
           }
         ]

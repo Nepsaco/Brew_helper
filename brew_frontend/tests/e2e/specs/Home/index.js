@@ -10,9 +10,9 @@ Then('I should see app name', (name) => {
 })
 
 And('I should see my recipes', () => {
-
+    the('recipes').contains('Recipes')
 })        
 
 And('I should see footer', () => {
-
+    the('current-beer').contains('Current Beer')
 })
