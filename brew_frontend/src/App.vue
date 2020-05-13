@@ -62,8 +62,8 @@
             </ul>
             <p>Water Adjustments</p>
             <ul>
-               <li>Name</li> 
-               <li>Amount</li> 
+               <li>Name</li>
+               <li>Amount</li>
             </ul>
             <p>Batch Vital Stats</p>
             <ul>
@@ -94,8 +94,9 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
+
     .header {
-        padding: $spacing-8; 
+        padding: $spacing-8;
     }
 }
 </style>
