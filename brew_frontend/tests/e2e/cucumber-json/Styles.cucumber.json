@@ -1,48 +1,49 @@
 [
   {
+    "description": "    The Style Feature shows a list of styles that can be searched through and ordered ",
     "keyword": "Feature",
-    "name": "Home",
+    "name": "Styles",
     "line": 1,
-    "id": "home",
+    "id": "styles",
     "tags": [],
-    "uri": "Home.feature",
+    "uri": "Styles.feature",
     "elements": [
       {
-        "id": "home;open-home-page",
+        "id": "styles;one-style",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Open home page",
+        "line": 4,
+        "name": "One style",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "I am on the home page",
+            "line": 5,
+            "name": "There is one style",
             "result": {
               "status": "passed",
-              "duration": 576000000
+              "duration": 610000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 5,
-            "name": "I should see app name",
+            "line": 6,
+            "name": "The style has name",
             "result": {
               "status": "passed",
-              "duration": 31000000
+              "duration": 24000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 6,
-            "name": "I should see styles",
+            "line": 7,
+            "name": "The style has description",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 20000000
             }
           }
         ]
