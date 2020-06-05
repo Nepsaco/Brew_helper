@@ -22,7 +22,7 @@
             "name": "I am on the home page",
             "result": {
               "status": "passed",
-              "duration": 576000000
+              "duration": 448000000
             }
           },
           {
@@ -32,17 +32,37 @@
             "name": "I should see app name",
             "result": {
               "status": "passed",
-              "duration": 31000000
+              "duration": 34000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "I should see styles",
+            "name": "I should see nav button",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click the nav button",
+            "result": {
+              "status": "passed",
+              "duration": 177000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see the nav menu",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
             }
           }
         ]

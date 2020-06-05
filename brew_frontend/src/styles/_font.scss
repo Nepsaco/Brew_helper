@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,700&display=swap');
+
 $font-xs: 12px;
 $font-small: 14px;
 $font-base: 16px;
 $font-large: 18px;
-$font-xxl: 20px;
-$font-xxxl: 24px;
-$font-xxxxl: 30px;
-$font-xxxxxl: 36px;
-$font-xxxxxxl: 48px;
-$font-xxxxxxxl: 60px;
-$font-xxxxxxxxl: 72px;
+$font-xl: 20px;
+$font-xxl: 24px;
+$font-xxxl: 30px;
+$font-xxxxl: 36px;
+$font-xxxxxl: 48px;
+$font-xxxxxxl: 60px;
+$font-xxxxxxxl: 72px;
+
+@mixin header-font {
+    font-family: 'Arimo', sans-serif;
+    font-size: $font-xxxl;
+    font-weight: 700;
+}
+
+@mixin body-font {
+    font-family: 'Arimo', sans-serif;
+    font-size: $font-base;
+}
