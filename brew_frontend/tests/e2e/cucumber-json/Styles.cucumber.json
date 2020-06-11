@@ -23,7 +23,7 @@
             "name": "There is one style",
             "result": {
               "status": "passed",
-              "duration": 663000000
+              "duration": 3779000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "The style has name",
             "result": {
               "status": "passed",
-              "duration": 55000000
+              "duration": 67000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "The style has description",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 24000000
             }
           }
         ]

@@ -1,20 +1,22 @@
 <template>
   <div id="app">
-    <header>
-      <h1 data-test-main-heading>
-        Brew Helper
-      </h1>
-      <Nav v-if="displayNav" />
-      <button
-        v-else
-        data-test-nav-button
-        @click="toggleNav">
-        &#9776;
-      </button>
-    </header>
-    <main>
-      <router-view />
-    </main>
+    <div class="app">
+      <header>
+        <h1 data-test-main-heading>
+          Brew Helper
+        </h1>
+        <button
+          v-if="!displayNav"
+          data-test-nav-button
+          @click="toggleNav">
+          &#9776;
+        </button>
+      </header>
+      <main>
+        <router-view />
+      </main>
+    </div>
+    <Nav v-if="displayNav" />
   </div>
 </template>
 
@@ -41,11 +43,26 @@ export default {
 
 <style lang="scss">
 #app {
-    header {
-        display: flex;
-        justify-content: space-between;
-        padding: $xxxl;
-        @include header-font;
+    display: flex;
+    background: $white;
+    height: 100vh;
+
+    .app {
+        width: 100%;
+        header {
+            display: flex;
+            height: 25vh;
+            justify-content: space-between;
+            align-items: center;
+            padding: $xxxl;
+            @include header-font;
+
+            button {
+                background: none;
+                border: none;
+                font-size: $font-xxxl;
+            }
+        }
     }
 }
 </style>

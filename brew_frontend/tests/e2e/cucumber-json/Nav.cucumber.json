@@ -1,0 +1,82 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Nav",
+    "line": 1,
+    "id": "nav",
+    "tags": [],
+    "uri": "Nav.feature",
+    "elements": [
+      {
+        "id": "nav;nav-closed",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Nav closed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "The Nav is closed",
+            "result": {
+              "status": "passed",
+              "duration": 958000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "I should see the Nav button",
+            "result": {
+              "status": "passed",
+              "duration": 54000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "nav;nav-open",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Nav open",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click on the Nav button",
+            "result": {
+              "status": "passed",
+              "duration": 120000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see the nav menu",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "There should be a list of links",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

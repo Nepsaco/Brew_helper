@@ -18,6 +18,12 @@ $font-xxxxxxxl: 72px;
     font-weight: 700;
 }
 
+@mixin title-font {
+    font-family: 'Arimo', sans-serif;
+    font-size: $font-xl;
+    font-weight: 700;
+}
+
 @mixin body-font {
     font-family: 'Arimo', sans-serif;
     font-size: $font-base;
