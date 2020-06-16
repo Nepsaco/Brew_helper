@@ -9,6 +9,11 @@
       </li>
       <li>
         <h2>Your Recipes</h2>
+        <ul data-test-recipe-list>
+          <li data-test-recipe-card>
+            Beer Name:
+          </li>
+        </ul>
       </li>
     </ul>
   </div>

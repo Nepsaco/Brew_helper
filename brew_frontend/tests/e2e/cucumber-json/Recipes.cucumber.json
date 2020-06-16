@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Recipes",
+    "line": 1,
+    "id": "recipes",
+    "tags": [],
+    "uri": "Recipes.feature",
+    "elements": [
+      {
+        "id": "recipes;i-am-on-the-home-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "I am on the home page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the home page",
+            "result": {
+              "status": "passed",
+              "duration": 1152000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should see list of recipe cards",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "Each recipe card should display the recipe \"Beer Name\" and \"Beer Type\"",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

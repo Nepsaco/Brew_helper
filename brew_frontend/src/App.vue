@@ -3,7 +3,9 @@
     <div class="app">
       <header>
         <h1 data-test-main-heading>
-          Brew Helper
+          <router-link to="/">
+            Brew Helper
+          </router-link>
         </h1>
         <button
           v-if="!displayNav"
@@ -16,7 +18,9 @@
         <router-view />
       </main>
     </div>
-    <Nav v-if="displayNav" />
+    <Nav
+      v-if="displayNav"
+      @toggle-nav="toggleNav" />
   </div>
 </template>
 
@@ -57,9 +61,11 @@ export default {
             padding: $xxxl;
             @include header-font;
 
+            a {
+                color: $black;
+            }
+
             button {
-                background: none;
-                border: none;
                 font-size: $font-xxxl;
             }
         }

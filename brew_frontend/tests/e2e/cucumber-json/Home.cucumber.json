@@ -22,7 +22,7 @@
             "name": "I am on the home page",
             "result": {
               "status": "passed",
-              "duration": 451000000
+              "duration": 581000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I should see app name",
             "result": {
               "status": "passed",
-              "duration": 33000000
+              "duration": 27000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I should see nav button",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 14000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I click the nav button",
             "result": {
               "status": "passed",
-              "duration": 137000000
+              "duration": 121000000
             }
           },
           {
