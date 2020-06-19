@@ -30,9 +30,12 @@ export default {
   },
   computed: {
     getBackgroundColor() {
-      return this.recipe.SRM
-        ? { background: srmObject[this.recipe.SRM] }
-        : { background: 'hsl(0 0% 35%)' };
+      if (this.recipe.SRM <= 40 && this.recipe.SRM > 0) {
+        return { background: srmObject[this.recipe.SRM] };
+      } if (this.recipe.SRM > 40) {
+        return { background: srmObject[40] };
+      }
+      return { background: 'hsl(0 0% 35%)' };
     },
   },
 };
