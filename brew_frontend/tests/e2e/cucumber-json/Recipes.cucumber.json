@@ -22,7 +22,7 @@
             "name": "I am on the home page",
             "result": {
               "status": "passed",
-              "duration": 539000000
+              "duration": 221000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I should see list of recipe cards",
             "result": {
               "status": "passed",
-              "duration": 49000000
+              "duration": 56000000
             }
           },
           {
@@ -68,7 +68,7 @@
             "name": "Each recipe card should display the recipe info:",
             "result": {
               "status": "passed",
-              "duration": 128000000
+              "duration": 120000000
             }
           }
         ]

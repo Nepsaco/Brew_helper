@@ -9,7 +9,10 @@
     <section>
       <h2>Your Recipes</h2>
       <ul data-test-recipe-list>
-        <RecipeCard />
+        <RecipeCard
+          v-for="recipe in recipes"
+          :key="recipe.name"
+          :recipe="recipe" />
       </ul>
     </section>
   </div>
@@ -22,6 +25,25 @@ export default {
   name: 'Index',
   components: {
     RecipeCard,
+  },
+  data() {
+    return {
+      recipes: [{
+        id: 1,
+        name: "Tobie's IPA",
+        type: 'IPA',
+        ABV: '6%',
+        IBU: '80',
+        SRM: 9,
+      }, {
+        id: 2,
+        name: "Lyndsi's Lager",
+        type: 'Lager',
+        ABV: '4%',
+        IBU: '10',
+        SRM: 2,
+      }],
+    };
   },
 };
 </script>

@@ -1,39 +1,39 @@
 <template>
   <div class="recipe-card">
     <li data-test-recipe-card>
-      <div class="card-header">
-        <p data-test-beer-1>
-          Tobie's IPA
+      <div
+        class="card-header"
+        :style="getBackgroundColor">
+        <p :data-test-="recipe.id">
+          {{ recipe.name }}
         </p>
       </div>
       <div class="card-body">
-        <p>Type: IPA</p>
-        <p>ABV: 6%</p>
-        <p>IBU: 60</p>
-      </div>
-    </li>
-    <li data-test-recipe-card>
-      <div class="card-header">
-        <p data-test-beer-2>
-          Lyndsi's Lager
-        </p>
-      </div>
-      <div class="card-body">
-        <p>Type: Lager</p>
-        <p>ABV: 4%</p>
-        <p>IBU: 60</p>
+        <p>Type: {{ recipe.type }}</p>
+        <p>ABV: {{ recipe.ABV }}</p>
+        <p>IBU: {{ recipe.IBU }}</p>
       </div>
     </li>
   </div>
 </template>
 
 <script>
+import srmObject from '@/assets/srm-swatch';
+
 export default {
   name: 'RecipeCard',
-  data() {
-    return {
-      srm: 9,
-    };
+  props: {
+    recipe: {
+      type: Object,
+      required: true,
+    },
+  },
+  computed: {
+    getBackgroundColor() {
+      return this.recipe.SRM
+        ? { background: srmObject[this.recipe.SRM] }
+        : { background: 'hsl(0 0% 35%)' };
+    },
   },
 };
 </script>
@@ -52,6 +52,7 @@ export default {
     .card-header {
       border-radius: 10px 10px 0 0 ;
       padding: $base;
+      color: $white;
     }
 
     .card-body {

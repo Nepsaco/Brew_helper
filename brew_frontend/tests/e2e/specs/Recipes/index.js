@@ -14,7 +14,7 @@ And('Each recipe card should display the recipe info:', (dataTable) => {
   const info = dataTable.hashes();
   info.forEach((beer) => {
     const { id } = beer;
-    const beerId = `beer-${id}`;
+    const beerId = `=${id}`;
     const beerName = beer['Beer Name'];
     const beerType = beer['Beer Type'];
 
