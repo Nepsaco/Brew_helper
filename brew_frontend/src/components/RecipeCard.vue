@@ -53,6 +53,7 @@ export default {
       border-radius: 10px 10px 0 0 ;
       padding: $base;
       color: $white;
+      text-shadow: 1px 1px 1px $grey;
     }
 
     .card-body {
