@@ -1,49 +1,57 @@
 <template>
   <div class="index">
-    <ul>
-      <li class="brewing-now">
-        <h2>Brewing Now</h2>
-      </li>
-      <li>
-        <h2>Calculators</h2>
-      </li>
-      <li>
-        <h2>Your Recipes</h2>
-        <ul data-test-recipe-list>
-          <li data-test-recipe-card>
-            Beer Name:
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <section class="brewing-now">
+      <h2>Brewing Now</h2>
+    </section>
+    <section>
+      <h2>Calculators</h2>
+    </section>
+    <section>
+      <h2>Your Recipes</h2>
+      <ul data-test-recipe-list>
+        <RecipeCard />
+      </ul>
+    </section>
   </div>
 </template>
 
 <script>
+import RecipeCard from '@/components/RecipeCard';
+
+export default {
+  name: 'Index',
+  components: {
+    RecipeCard,
+  },
+};
 </script>
 
 <style lang='scss'>
 .index {
-    ul {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
+    display: flex;
+    height: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    overflow: scroll;
 
-        li {
-            margin: 2.5%;
-            padding: $xl;
-            width: 45%;
-            border-radius: 10px;
-            box-shadow: 5px 5px 15px $black;
+    section {
+      margin: 2.5%;
+      padding: $xl;
+      width: 45%;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px $black;
 
-            h2 {
-                @include title-font;
-            }
-        }
+      ul {
+        padding-top: $large;
+      }
 
-        .brewing-now {
-            width: 95%;
-        }
+      h2 {
+        @include title-font;
+      }
     }
-}
+
+    .brewing-now {
+      width: 95%;
+    }
+  }
 </style>

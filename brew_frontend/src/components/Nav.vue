@@ -33,7 +33,7 @@
 <script>
 </script>
 
-<styles lang='scss'>
+<style lang="scss">
 .sidebar {
     width: 25vw;
     height: 100vh;
@@ -66,4 +66,4 @@
         }
     }
 }
-</styles>
+</style>

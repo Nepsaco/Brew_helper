@@ -70,5 +70,9 @@ export default {
             }
         }
     }
+
+    main {
+      height: 75vh;
+    }
 }
 </style>

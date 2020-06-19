@@ -10,6 +10,15 @@ Given('I am on the home page', () => {
 Then('I should see list of recipe cards', () => {
   the('recipe-list').should('have.descendants', 'li');
 });
-And('Each recipe card should display the recipe {string} and {string}', (beerName, beerType) => {
-  the('recipe-card').should('contain', beerName);
+And('Each recipe card should display the recipe info:', (dataTable) => {
+  const info = dataTable.hashes();
+  info.forEach((beer) => {
+    const { id } = beer;
+    const beerId = `beer-${id}`;
+    const beerName = beer['Beer Name'];
+    const beerType = beer['Beer Type'];
+
+    the(beerId).should('contain', beerName);
+    the(beerId).should('contain', beerType);
+  });
 });
