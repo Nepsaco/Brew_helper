@@ -49,6 +49,7 @@ export default {
     width: 45%;
 
   li {
+    color: $black;
     border-radius: 10px;
     box-shadow: 2px 2px 5px $black;
     @include body-font;
@@ -62,6 +63,14 @@ export default {
 
     .card-body {
       padding: $base;
+    }
+
+    &:hover {
+      box-shadow: 3px 3px 5px $black;
+    }
+
+    &:active {
+      box-shadow: 1px 1px 5px $black;
     }
   }
 }

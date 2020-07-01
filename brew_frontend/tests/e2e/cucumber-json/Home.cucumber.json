@@ -22,7 +22,7 @@
             "name": "I am on the home page",
             "result": {
               "status": "passed",
-              "duration": 449000000
+              "duration": 1188000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I should see app name",
             "result": {
               "status": "passed",
-              "duration": 29000000
+              "duration": 26000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I should see nav button",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 17000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I click the nav button",
             "result": {
               "status": "passed",
-              "duration": 104000000
+              "duration": 112000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I should see the nav menu",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 14000000
             }
           }
         ]
