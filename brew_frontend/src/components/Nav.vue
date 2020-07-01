@@ -35,35 +35,38 @@
 
 <style lang="scss">
 .sidebar {
-    width: 25vw;
-    height: 100vh;
+  position: absolute;
+  right: 0px;
+  width: 25vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  background: $white;
+  padding: $xxl;
+  box-shadow: 5px 5px 15px $black;
+  transition: all 3 ease-in-out;
+
+  button {
+    align-self: flex-end;
+    font-size: $font-xxxxxl;
+  }
+
+  ul {
     display: flex;
     flex-flow: column;
-    background: $white;
-    padding: $xxl;
-            box-shadow: 5px 5px 15px $black;
+    height: 25%;
+    justify-content: space-between;
 
-    button {
-        align-self: flex-end;
-        font-size: $font-xxxxxl;
+    @include title-font;
+
+    a {
+      text-decoration: none;
+      color: $black;
+
+      &:hover {
+        color: $blue;
+      }
     }
-
-    ul {
-        display: flex;
-        flex-flow: column;
-        height: 25%;
-        justify-content: space-between;
-
-        @include title-font;
-
-        a {
-            text-decoration: none;
-            color: $black;
-
-            &:hover {
-                color: $blue;
-            }
-        }
-    }
+  }
 }
 </style>

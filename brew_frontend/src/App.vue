@@ -18,9 +18,11 @@
         <router-view />
       </main>
     </div>
-    <Nav
-      v-if="displayNav"
-      @toggle-nav="toggleNav" />
+    <transition name="fade">
+      <Nav
+        v-if="displayNav"
+        @toggle-nav="toggleNav" />
+    </transition>
   </div>
 </template>
 
@@ -52,7 +54,6 @@ export default {
     height: 100vh;
 
     .app {
-        width: 100%;
         header {
             display: flex;
             height: 25vh;
@@ -73,6 +74,12 @@ export default {
 
     main {
       height: 75vh;
+    }
+    .fade-enter-active, .fade-leave-active {
+      transition: all .5s ease;
+    }
+    .fade-enter, .fade-leave-to {
+      transform: translateX(25vw);
     }
 }
 </style>
