@@ -1,9 +1,15 @@
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, createLocalVue } from '@vue/test-utils';
+import VueRouter from 'vue-router';
 import RecipeCard from '@/components/RecipeCard.vue';
 import srmObject from '@/assets/srm-swatch';
 
 describe('RecipeCard.vue', () => {
+  const localVue = createLocalVue();
+  localVue.use(VueRouter);
+  const router = new VueRouter();
   const $RecipeCard = shallowMount(RecipeCard, {
+    localVue,
+    router,
     propsData: {
       recipe: {
         id: 1,

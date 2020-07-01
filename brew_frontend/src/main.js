@@ -5,11 +5,11 @@ import './registerServiceWorker';
 import router from './router';
 import storeConfig from './store';
 
+Vue.config.productionTip = false;
 Vue.use(Vuex);
 
 const store = new Vuex.Store(storeConfig);
 
-Vue.config.productionTip = false;
 
 new Vue({
   router,

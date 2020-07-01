@@ -1,7 +1,7 @@
 <template>
   <div class="recipe">
     <h2 data-test-recipes>
-      Recipes
+      Recipes {{ $route.params.id }}
     </h2>
     <ul>
       <li>Brewer: Tobie</li>

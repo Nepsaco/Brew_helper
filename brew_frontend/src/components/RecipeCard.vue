@@ -1,19 +1,21 @@
 <template>
   <div class="recipe-card">
-    <li data-test-recipe-card>
-      <div
-        class="card-header"
-        :style="getBackgroundColor">
-        <p :data-test-="recipe.id">
-          {{ recipe.name }}
-        </p>
-      </div>
-      <div class="card-body">
-        <p>Type: {{ recipe.type }}</p>
-        <p>ABV: {{ recipe.ABV }}</p>
-        <p>IBU: {{ recipe.IBU }}</p>
-      </div>
-    </li>
+    <router-link :to="{ name: 'recipes', params: { id: recipe.id }, props: { recipe } }">
+      <li data-test-recipe-card>
+        <div
+          class="card-header"
+          :style="getBackgroundColor">
+          <p :data-test-="recipe.id">
+            {{ recipe.name }}
+          </p>
+        </div>
+        <div class="card-body">
+          <p>Type: {{ recipe.type }}</p>
+          <p>ABV: {{ recipe.ABV }}</p>
+          <p>IBU: {{ recipe.IBU }}</p>
+        </div>
+      </li>
+    </router-link>
   </div>
 </template>
 
@@ -43,11 +45,10 @@ export default {
 
 <style lang='scss'>
 .recipe-card {
-  display: flex;
+    margin: $small;
+    width: 45%;
 
   li {
-    margin: 2.5%;
-    width: 45%;
     border-radius: 10px;
     box-shadow: 2px 2px 5px $black;
     @include body-font;
@@ -64,5 +65,4 @@ export default {
     }
   }
 }
-
 </style>

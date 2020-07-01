@@ -8,12 +8,15 @@
     </section>
     <section>
       <h2>Your Recipes</h2>
-      <ul data-test-recipe-list>
-        <RecipeCard
-          v-for="recipe in recipes"
-          :key="recipe.name"
-          :recipe="recipe" />
-      </ul>
+      <div class="section-content">
+        <ul data-test-recipe-list>
+          <RecipeCard
+            v-for="recipe in recipes"
+            :key="recipe.id"
+            :recipe="recipe"
+            ul />
+        </ul>
+      </div>
     </section>
   </div>
 </template>
@@ -26,24 +29,10 @@ export default {
   components: {
     RecipeCard,
   },
-  data() {
-    return {
-      recipes: [{
-        id: 1,
-        name: "Tobie's IPA",
-        type: 'IPA',
-        ABV: '6%',
-        IBU: '80',
-        SRM: 9,
-      }, {
-        id: 2,
-        name: "Lyndsi's Lager",
-        type: 'Lager',
-        ABV: '4%',
-        IBU: '10',
-        SRM: 2,
-      }],
-    };
+  computed: {
+    recipes() {
+      return this.$store.getters.getAllRecipes;
+    },
   },
 };
 </script>
@@ -54,26 +43,34 @@ export default {
     height: 100%;
     flex-flow: row wrap;
     justify-content: space-around;
-    overflow: scroll;
 
     section {
-      margin: 2.5%;
+      margin: $large;
       padding: $xl;
       width: 45%;
       border-radius: 10px;
       box-shadow: 5px 5px 15px $black;
-
-      ul {
-        padding-top: $large;
-      }
+      overflow: scroll;
 
       h2 {
         @include title-font;
+        margin-bottom: $base;
+      }
+
+      .section-content {
+        max-height: 30vh;
+        overflow: scroll;
+
+        ul {
+          display: flex;
+          flex-flow: row wrap;
+        }
       }
     }
 
     .brewing-now {
-      width: 95%;
+      width: 95vw;
+      max-height: 50vh;
     }
   }
 </style>
